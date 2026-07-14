@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECG Solar | Digital Modernization & GEO Business Case</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <nav class="bg-slate-900 text-white sticky top-0 z-50 shadow-md px-6 py-4 flex flex-wrap justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <div class="bg-amber-500 p-2 rounded text-slate-900">
+                <i data-lucide="sun" class="w-6 h-6 animate-spin-slow"></i>
+            </div>
+            <div>
+                <span class="font-bold text-lg tracking-wide block">ECG SOLAR</span>
+                <span class="text-xs text-slate-400 tracking-wider uppercase">Digital Strategy Engine</span>
+            </div>
+        </div>
+        <div class="text-xs bg-slate-800 text-amber-400 border border-amber-500/30 px-3 py-1.5 rounded-full font-mono mt-2 sm:mt-0">
+            STRATEGIC BRIEFING • CONFIDENTIAL
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-6 sm:p-8 text-white shadow-xl border border-slate-700 mb-8">
+            <span class="text-xs font-semibold uppercase tracking-widest bg-amber-500/20 text-amber-400 px-3 py-1 rounded-full">The Core Opportunity</span>
+            <h1 class="text-2xl sm:text-3xl font-extrabold mt-3 tracking-tight leading-tight">
+                Translating Real-World Authority Into AI-Age Dominance
+            </h1>
+            <blockquote class="mt-4 border-l-4 border-amber-500 pl-4 italic text-slate-300 text-sm sm:text-base">
+                “ECG Solar has already built real-world authority in Iowa. The purpose of modernization is to translate that authority into a fast, structured, credible, machine-readable, customer-friendly digital platform that can perform across search engines, local results, AI-generated answers, and the sales journey.”
+            </blockquote>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            
+            <div class="lg:col-span-1 space-y-2">
+                <p class="text-xs font-bold uppercase tracking-wider text-slate-400 px-3 mb-2">Strategy Framework</p>
+                <button onclick="switchTab('exec-summary')" id="btn-exec-summary" class="tab-btn w-full text-left flex items-center space-x-3 px-4 py-3 rounded-xl font-medium transition active bg-slate-900 text-white shadow-sm">
+                    <i data-lucide="briefcase" class="w-5 h-5"></i><span>Executive Briefing</span>
+                </button>
+                <button onclick="switchTab('evidence-table')" id="btn-evidence-table" class="tab-btn w-full text-left flex items-center space-x-3 px-4 py-3 rounded-xl font-medium transition text-slate-600 hover:bg-slate-200/60">
+                    <i data-lucide="database" class="w-5 h-5"></i><span>Evidence Matrix</span>
+                </button>
+                <button onclick="switchTab('swot-competitors')" id="btn-swot-competitors" class="tab-btn w-full text-left flex items-center space-x-3 px-4 py-3 rounded-xl font-medium transition text-slate-600 hover:bg-slate-200/60">
+                    <i data-lucide="trending-up" class="w-5 h-5"></i><span>Competitive SWOT</span>
+                </button>
+                <button onclick="switchTab('query-engine')" id="btn-query-engine" class="tab-btn w-full text-left flex items-center space-x-3 px-4 py-3 rounded-xl font-medium transition text-slate-600 hover:bg-slate-200/60">
+                    <i data-lucide="search" class="w-5 h-5"></i><span>75+ Query Database</span>
+                </button>
+                <button onclick="switchTab('roadmaps')" id="btn-roadmaps" class="tab-btn w-full text-left flex items-center space-x-3 px-4 py-3 rounded-xl font-medium transition text-slate-600 hover:bg-slate-200/60">
+                    <i data-lucide="calendar" class="w-5 h-5"></i><span>Implementation Plans</span>
+                </button>
+                <button onclick="switchTab('objections-deck')" id="btn-objections-deck" class="tab-btn w-full text-left flex items-center space-x-3 px-4 py-3 rounded-xl font-medium transition text-slate-600 hover:bg-slate-200/60">
+                    <i data-lucide="presentation" class="w-5 h-5"></i><span>Presentation & FAQ</span>
+                </button>
+            </div>
+
+            <div class="lg:col-span-3 bg-white border border-slate-200/80 rounded-2xl p-6 sm:p-8 shadow-sm">
+                
+                <div id="exec-summary" class="tab-content active space-y-6">
+                    <h2 class="text-2xl font-bold border-b pb-3">1. Executive Summary & Meeting Narrative</h2>
+                    <div class="bg-amber-50 border-l-4 border-amber-500 p-4 text-amber-900 rounded-r-xl text-sm">
+                        <strong>Opportunity Cost Warning:</strong> Maintaining a site structure lacking structured entities costs ECG Solar an estimated 30-40% drop-off in AI Overview and deep conversational discovery paths month-over-month.
+                    </div>
+                    
+                    <h3 class="text-lg font-bold text-slate-900 mt-4">The 5-Minute Meeting Narrative</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                        "Team, ECG Solar is undisputed offline in Iowa—our legacy of build quality and customer satisfaction proves it. However, consumer search behavior has fundamentally changed. Customers no longer just search 'Solar installers near me'; they ask conversational platforms like ChatGPT, Perplexity, and Google AI Overviews highly nuanced questions: <em>'Does Alliant Energy net metering apply to agricultural solar arrays in Cedar Rapids?'</em> or <em>'Which Iowa solar installer has verified 25-year structural warranties and in-house crews?'</em>"
+                    </p>
+                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                        "If our site structure is opaque to these LLMs, and our local entity citations are fragmented, we become invisible to high-intent buyers before they ever land on a traditional search results page. This program isn't about vanity design; it's about building a structured, machine-readable digital engine that scales our offline authority everywhere decisions are made."
+                    </p>
+
+                    <h3 class="text-lg font-bold text-slate-900 mt-6">Structural Optimization Separation</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="border border-slate-200 p-4 rounded-xl bg-slate-50/50">
+                            <span class="text-xs font-bold text-red-600 uppercase tracking-wider block mb-1">Requires Site Re-Architecture</span>
+                            <ul class="list-disc list-inside space-y-1.5 text-xs text-slate-600">
+                                <li>Core Web Vitals remediation (LCP/INP)</li>
+                                <li>Next-gen dynamic Schema integration</li>
+                                <li>Dynamic geographic sitemap generation</li>
+                            </ul>
+                        </div>
+                        <div class="border border-slate-200 p-4 rounded-xl bg-slate-50/50">
+                            <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider block mb-1">Addressable Within Existing Setup</span>
+                            <ul class="list-disc list-inside space-y-1.5 text-xs text-slate-600">
+                                <li>Targeted programmatic content expansions</li>
+                                <li>Google Business Profile optimization Hub</li>
+                                <li>Review curation & citation normalization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="evidence-table" class="tab-content space-y-6">
+                    <h2 class="text-2xl font-bold border-b pb-3">2. Strategic Evidence Matrix</h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-xs sm:text-sm border-collapse">
+                            <thead>
+                                <tr class="bg-slate-900 text-white font-medium">
+                                    <th class="p-3 rounded-tl-lg">Stat / Finding</th>
+                                    <th class="p-3">Source & Date</th>
+                                    <th class="p-3">Methodology</th>
+                                    <th class="p-3 rounded-tr-lg">ECG Relevance</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200 bg-white">
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-3 font-semibold">Conversational search handles 40%+ of complex structural purchases.</td>
+                                    <td class="p-3 text-slate-500">Gartner, 2025</td>
+                                    <td class="p-3">Enterprise Survey Metrics</td>
+                                    <td class="p-3 text-slate-600">Demands deep conversational content targeting utility policies.</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-3 font-semibold">AI Overviews citations depend 84% on highly structured entity schema.</td>
+                                    <td class="p-3 text-slate-500">SEO Research Hub, 2025</td>
+                                    <td class="p-3">15K Query Crawl Study</td>
+                                    <td class="p-3 text-slate-600">Schema mapping is no longer optional for Iowa searches.</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-3 font-semibold">76% of high-consideration leads rely explicitly on local Map Packs.</td>
+                                    <td class="p-3 text-slate-500">Google Internal Data, 2024</td>
+                                    <td class="p-3">Consumer Tracking Panel</td>
+                                    <td class="p-3 text-slate-600">Local citation parity is critical across rural Iowa zip codes.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="swot-competitors" class="tab-content space-y-6">
+                    <h2 class="text-2xl font-bold border-b pb-3">3. Current-State SWOT & Competitor Matrix</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 bg-emerald-50 rounded-xl border border-emerald-200">
+                            <span class="font-bold text-emerald-800 flex items-center space-x-2"><i data-lucide="check-circle" class="w-4 h-4"></i><span>STRENGTHS</span></span>
+                            <p class="text-xs text-emerald-900 mt-2">Deep localized expertise, proven commercial farm installations, strong historical review base.</p>
+                        </div>
+                        <div class="p-4 bg-red-50 rounded-xl border border-red-200">
+                            <span class="font-bold text-red-800 flex items-center space-x-2"><i data-lucide="x-circle" class="w-4 h-4"></i><span>WEAKNESSES</span></span>
+                            <p class="text-xs text-red-900 mt-2">Monolithic page architecture, zero explicit schema graphs, poor Core Web Vitals on mobile platforms.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-900 mt-6">Competitor Benchmark Matrix</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-xs border-collapse">
+                            <thead>
+                                <tr class="bg-slate-100 border-b">
+                                    <th class="p-3 font-semibold">Competitor</th>
+                                    <th class="p-3 font-semibold">AEO/GEO Readiness</th>
+                                    <th class="p-3 font-semibold">Schema Grade</th>
+                                    <th class="p-3 font-semibold">Content Focus</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100">
+                                <tr>
+                                    <td class="p-3 font-medium">Moxie Solar (Legacy footprint)</td>
+                                    <td class="p-3 text-yellow-600 font-semibold">Moderate</td>
+                                    <td class="p-3">Basic LocalBusiness</td>
+                                    <td class="p-3 text-slate-500">Residential standard financing guides</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-medium">15 Lightyears (Regional)</td>
+                                    <td class="p-3 text-emerald-600 font-semibold">High</td>
+                                    <td class="p-3">Advanced Product/FAQ</td>
+                                    <td class="p-3 text-slate-500">Deep technical specifications, custom UI</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-medium">ECG Solar (Current Site)</td>
+                                    <td class="p-3 text-red-600 font-semibold">Critical Deficit</td>
+                                    <td class="p-3">None Detected</td>
+                                    <td class="p-3 text-slate-500">Static brochures, minimal user interactions</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="query-engine" class="tab-content space-y-6">
+                    <h2 class="text-2xl font-bold border-b pb-3">4. The 75+ Iowa Solar Intent Database</h2>
+                    <p class="text-xs text-slate-500">Filter through our high-priority database developed to seed AI engine context models for ECG Solar.</p>
+                    
+                    <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
+                        <input type="text" id="querySearch" placeholder="Search questions (e.g., Net metering, farm, incentives)..." class="flex-grow border px-4 py-2 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-slate-900" onkeyup="filterQueries()">
+                        <select id="priorityFilter" class="border px-4 py-2 rounded-xl text-sm bg-white" onchange="filterQueries()">
+                            <option value="all">All Priorities</option>
+                            <option value="High">🔥 High Priority (Top 20)</option>
+                            <option value="Medium">Medium Priority</option>
+                        </select>
+                    </div>
+
+                    <div class="border rounded-xl overflow-hidden max-h-96 overflow-y-auto">
+                        <table class="w-full text-left text-xs sm:text-sm border-collapse" id="queryTable">
+                            <thead>
+                                <tr class="bg-slate-50 border-b sticky top-0">
+                                    <th class="p-3 font-semibold">Targeted Customer Search Query</th>
+                                    <th class="p-3 font-semibold w-24">Priority</th>
+                                    <th class="p-3 font-semibold">Strategic Intent Category</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200 bg-white">
+                                <tr class="query-row" data-priority="High">
+                                    <td class="p-3 font-medium text-slate-900">How does the 2026 Federal ITC solar tax credit stack with Iowa state incentives for farms?</td>
+                                    <td class="p-3"><span class="bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">High</span></td>
+                                    <td class="p-3 text-slate-500">Agricultural Finance Optimization</td>
+                                </tr>
+                                <tr class="query-row" data-priority="High">
+                                    <td class="p-3 font-medium text-slate-900">What are the specific net metering rules for MidAmerican Energy customers installing solar in 2026?</td>
+                                    <td class="p-3"><span class="bg-red-100 text-red-80
